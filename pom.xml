@@ -83,12 +83,18 @@
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.0.1</version>
 		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.1.41</version>
+		</dependency>
 	</dependencies>
 	<modules>
 		<module>learnback</module>
 		<module>learnfront</module>
 		<module>learnsqlmapper</module>
 		<module>learncommon</module>
+		<module>learnwebservice</module>
 	</modules>
 	<build>
 		<plugins>
