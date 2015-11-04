@@ -88,6 +88,16 @@
 			<artifactId>fastjson</artifactId>
 			<version>1.1.41</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+			<version>4.4.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.1</version>
+		</dependency>
 	</dependencies>
 	<modules>
 		<module>learnback</module>
@@ -95,6 +105,7 @@
 		<module>learnsqlmapper</module>
 		<module>learncommon</module>
 		<module>learnwebservice</module>
+		<module>learnmybatisgenerator</module>
 	</modules>
 	<build>
 		<plugins>

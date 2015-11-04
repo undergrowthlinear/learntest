@@ -5,6 +5,7 @@
 <configuration>
 	<mappers>
 		<mapper resource="com/learnback/mapper/UserMapper.xml" />
+		<mapper resource="com/learnback/mapper/GsmsContactMapper.xml" />
 	</mappers>
 </configuration>
 

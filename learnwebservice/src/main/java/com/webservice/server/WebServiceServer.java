@@ -12,6 +12,7 @@ public class WebServiceServer {
 		ApplicationContext context=new ClassPathXmlApplicationContext("classpath:spring-context.xml");
 		UserWebService userWebService=context.getBean("userWebService", UserWebService.class);
 		System.out.println(userWebService);
+		System.out.println((UserWebService)null);
 		while(true){}
 	}
 
