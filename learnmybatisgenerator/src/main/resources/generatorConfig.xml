@@ -5,10 +5,10 @@
 
 <generatorConfiguration>
 	<context id="my" targetRuntime="MyBatis3">
-		<commentGenerator>
+		<!-- <commentGenerator>
 			<property name="suppressDate" value="false" />
 			<property name="suppressAllComments" value="true" />
-		</commentGenerator>
+		</commentGenerator> -->
 
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
 			connectionURL="jdbc:mysql://192.168.6.45:3306/ump4.6.1_gsms" userId="root"

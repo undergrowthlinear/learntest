@@ -33,4 +33,13 @@
 		</property>
 	</bean>
 
+	<!-- <bean id="mapTest" class="com.learnback.MapGenerecTest">
+		<property name="maps">
+			<map key-type="">
+				<entry key="${mapK1}" value="${mapV1}">
+				</entry>
+			</map>
+		</property>
+	</bean> -->
+
 </beans>
