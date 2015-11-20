@@ -281,6 +281,16 @@
 			<artifactId>xlightweb</artifactId>
 			<version>2.13.2</version>
 		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.4</version>
+		</dependency>
 	</dependencies>
 	<modules>
 		<module>learnback</module>
@@ -290,6 +300,7 @@
 		<module>learnwebservice</module>
 		<module>learnmybatisgenerator</module>
 		<module>learnwork</module>
+		<module>learndblshared</module>
 	</modules>
 	<build>
 		<plugins>

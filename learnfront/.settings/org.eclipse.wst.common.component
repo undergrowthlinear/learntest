@@ -7,6 +7,9 @@
         <dependent-module archiveName="learnback-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/learnback/learnback">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="learndblshared-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/learndblshared/learndblshared">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <dependent-module archiveName="learnsqlmapper-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/learnsqlmapper/learnsqlmapper">
             <dependency-type>uses</dependency-type>
         </dependent-module>
