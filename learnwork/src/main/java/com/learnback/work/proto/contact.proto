@@ -1,0 +1,36 @@
+package com.learnback.work.proto;
+
+option java_package="com.learnback.work.proto";
+option java_outer_classname="ContactInfos";
+
+message Contact{
+
+message Person{
+required int32 id=1;
+required string name=2;
+
+enum SexType{  //性别
+MALE=1;
+FEMALE=2;
+}
+
+enum PhoneType{ //电话类型
+MOBILE=1;
+WORK=2;
+HOME=3;
+}
+
+message PhoneNumber{
+required string phone=1;
+required PhoneType phoneType=2 [default=MOBILE];
+}
+
+required SexType sexType=3 [default=MALE];
+repeated PhoneNumber phoneNumber=4;
+optional string email=5 [default='315457847@qq.com'];
+optional bool valid=6;
+}
+
+repeated Person persons=1;
+
+}
