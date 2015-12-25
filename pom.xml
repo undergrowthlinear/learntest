@@ -301,6 +301,11 @@
 			<artifactId>protobuf-java</artifactId>
 			<version>2.5.0</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-all</artifactId>
+			<version>5.13.0</version>
+		</dependency>
 	</dependencies>
 	<modules>
 		<module>learnback</module>
@@ -331,4 +336,12 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+	<distributionManagement>
+		<snapshotRepository>
+			<id>repo</id>
+			<name>
+				Repository Nam</name>
+			<url>file://d:/repo</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>

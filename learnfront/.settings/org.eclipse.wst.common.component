@@ -16,6 +16,15 @@
         <dependent-module archiveName="learncommon-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/learncommon/learncommon">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="canal.client-1.0.21-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/canal.client/canal.client">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="canal.protocol-1.0.21-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/canal.protocol/canal.protocol">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="canal.common-1.0.21-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/canal.common/canal.common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="learnfront"/>
         <property name="java-output-path" value="/learnfront/target/classes"/>
     </wb-module>

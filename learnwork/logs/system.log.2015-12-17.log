@@ -1,0 +1,29 @@
+2015-12-17 15:22:35,397 0     DEBUG [org.apache.http.impl.conn.BasicClientConnectionManager] (main:) Get connection for route {}->http://127.0.0.1:8086
+2015-12-17 15:22:35,438 41    DEBUG [org.apache.http.impl.conn.DefaultClientConnectionOperator] (main:) Connecting to 127.0.0.1:8086
+2015-12-17 15:22:35,500 103   DEBUG [org.apache.http.client.protocol.RequestAddCookies] (main:) CookieSpec selected: default
+2015-12-17 15:22:35,501 104   DEBUG [org.apache.http.client.protocol.RequestAuthCache] (main:) Auth cache not set in the context
+2015-12-17 15:22:35,501 104   DEBUG [org.apache.http.client.protocol.RequestTargetAuthentication] (main:) Target auth state: UNCHALLENGED
+2015-12-17 15:22:35,502 105   DEBUG [org.apache.http.client.protocol.RequestProxyAuthentication] (main:) Proxy auth state: UNCHALLENGED
+2015-12-17 15:22:35,503 106   DEBUG [org.apache.http.impl.client.DefaultHttpClient] (main:) Attempt 1 to execute request
+2015-12-17 15:22:35,503 106   DEBUG [org.apache.http.impl.conn.DefaultClientConnection] (main:) Sending request: GET /cgi-bin/sendsms?username=user01@ent01&password=123456&to=18287131062&msgtype=1&text=%B2%E2%CA%D4HTTP HTTP/1.1
+2015-12-17 15:22:35,504 107   DEBUG [org.apache.http.wire] (main:)  >> "GET /cgi-bin/sendsms?username=user01@ent01&password=123456&to=18287131062&msgtype=1&text=%B2%E2%CA%D4HTTP HTTP/1.1[\r][\n]"
+2015-12-17 15:22:35,505 108   DEBUG [org.apache.http.wire] (main:)  >> "Host: 127.0.0.1:8086[\r][\n]"
+2015-12-17 15:22:35,505 108   DEBUG [org.apache.http.wire] (main:)  >> "Connection: Keep-Alive[\r][\n]"
+2015-12-17 15:22:35,506 109   DEBUG [org.apache.http.wire] (main:)  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.7.0_71)[\r][\n]"
+2015-12-17 15:22:35,506 109   DEBUG [org.apache.http.wire] (main:)  >> "[\r][\n]"
+2015-12-17 15:22:35,506 109   DEBUG [org.apache.http.headers] (main:) >> GET /cgi-bin/sendsms?username=user01@ent01&password=123456&to=18287131062&msgtype=1&text=%B2%E2%CA%D4HTTP HTTP/1.1
+2015-12-17 15:22:35,506 109   DEBUG [org.apache.http.headers] (main:) >> Host: 127.0.0.1:8086
+2015-12-17 15:22:35,507 110   DEBUG [org.apache.http.headers] (main:) >> Connection: Keep-Alive
+2015-12-17 15:22:35,507 110   DEBUG [org.apache.http.headers] (main:) >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.7.0_71)
+2015-12-17 15:24:09,221 93824 DEBUG [org.apache.http.wire] (main:)  << "HTTP/1.1 200 OK[\r][\n]"
+2015-12-17 15:24:09,228 93831 DEBUG [org.apache.http.wire] (main:)  << "Content-Type: text/html[\r][\n]"
+2015-12-17 15:24:09,229 93832 DEBUG [org.apache.http.wire] (main:)  << "Content-Length: 2[\r][\n]"
+2015-12-17 15:24:09,230 93833 DEBUG [org.apache.http.wire] (main:)  << "[\r][\n]"
+2015-12-17 15:24:09,234 93837 DEBUG [org.apache.http.impl.conn.DefaultClientConnection] (main:) Receiving response: HTTP/1.1 200 OK
+2015-12-17 15:24:09,234 93837 DEBUG [org.apache.http.headers] (main:) << HTTP/1.1 200 OK
+2015-12-17 15:24:09,235 93838 DEBUG [org.apache.http.headers] (main:) << Content-Type: text/html
+2015-12-17 15:24:09,235 93838 DEBUG [org.apache.http.headers] (main:) << Content-Length: 2
+2015-12-17 15:24:09,260 93863 DEBUG [org.apache.http.impl.client.DefaultHttpClient] (main:) Connection can be kept alive indefinitely
+2015-12-17 15:24:09,293 93896 DEBUG [org.apache.http.wire] (main:)  << "-2"
+2015-12-17 15:24:09,294 93897 DEBUG [org.apache.http.impl.conn.BasicClientConnectionManager] (main:) Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2384fd7a
+2015-12-17 15:24:09,294 93897 DEBUG [org.apache.http.impl.conn.BasicClientConnectionManager] (main:) Connection can be kept alive indefinitely

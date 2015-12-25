@@ -3,6 +3,8 @@ package com.learnback.work.lightweb;
 import java.io.IOException;
 import java.net.ConnectException;
 import java.net.MalformedURLException;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Before;
@@ -16,6 +18,7 @@ import org.xlightweb.GetRequest;
 import org.xlightweb.HttpRequestHeader;
 import org.xlightweb.IHttpRequest;
 import org.xlightweb.IHttpResponse;
+import org.xlightweb.PostRequest;
 import org.xlightweb.client.HttpClient;
 
 @SuppressWarnings("deprecation")
@@ -117,7 +120,8 @@ public class XlightWebClient {
 					TimeUnit.MILLISECONDS);
 			if (response != null) {
 				System.out.println(response.getStatus() + "\t"
-						+ response.getReason()+"\t"+response.getBody().readString());
+						+ response.getReason() + "\t"
+						+ response.getBody().readString());
 			} else
 				throw new NullPointerException("等待3*60*1000未获取到响应");
 		} catch (IOException e) {
@@ -135,6 +139,25 @@ public class XlightWebClient {
 				e.printStackTrace();
 			}
 		}
+	}
+
+	@Test
+	public void postRequest() {
+		try {
+			IHttpRequest request = new PostRequest("http://localhost:11111/?",
+					"text", "utf-8", "测试post请求", true);
+			IHttpResponse response = client.call(request);
+			System.out.println(response.getCharacterEncoding() + "\t"
+					+ response.getContentLength() + "\t"
+					+ response.getContentType() + "\t" + response.getProtocol()
+					+ "\t" + response.getProtocolVersion() + "\t"
+					+ response.getReason() + "\t" + response.getStatus() + "\t"
+					+ URLDecoder.decode(response.getBody().readString("utf-8"),"utf-8"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 	}
 
 }

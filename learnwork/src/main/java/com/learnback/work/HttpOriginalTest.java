@@ -19,7 +19,7 @@ import org.junit.Test;
 public class HttpOriginalTest {
 
 	private static final String HOST = "127.0.0.1";
-	private static final int PORT = 18080;
+	private static final int PORT = 8086;
 
 	@Test
 	public void sendSms() {
