@@ -42,7 +42,7 @@ public class SdkTest {
 		// 获取bean
 		ApplicationContext context = new ClassPathXmlApplicationContext(
 				"classpath:spring-context.xml");
-		postServer = context.getBean("postServer", PostServer.class);
+		postServer = (PostServer) context.getBean("postServer", PostServer.class);
 		// 组装发送
 		account = new Account(postServer.getUsername(),
 				postServer.getPassword());

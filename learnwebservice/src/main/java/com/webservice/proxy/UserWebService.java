@@ -17,25 +17,25 @@ import com.learncommon.User;
 import com.learncommon.XmlBeanUtils;
 
 @Service
-@WebService(serviceName="userWebService")
-@SOAPBinding(parameterStyle=ParameterStyle.WRAPPED)
-public class UserWebService  extends SpringBeanAutowiringSupport {
+@WebService(serviceName = "userWebService")
+@SOAPBinding(parameterStyle = ParameterStyle.WRAPPED)
+public class UserWebService extends SpringBeanAutowiringSupport {
 
 	@Autowired
 	private UserService userService;
-	
+
 	@WebMethod
-	public String countTypeUser(int type){
-		int count=userService.countTypeUser(type);
+	public String countTypeUser(int type) {
+		int count = userService.countTypeUser(type);
 		return JSON.toJSONString(count);
 	}
-	
+
 	@WebMethod
-	public String getUserById(String id){
-		User user=new User();
+	public String getUserById(String id) {
+		User user = new User();
 		user.setUserName(id);
 		user.setPassword(UUID.randomUUID().toString());
 		return XmlBeanUtils.bean2Xml(user);
 	}
-	
+
 }

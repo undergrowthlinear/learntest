@@ -8,9 +8,7 @@
 		<artifactId>learntest</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.undergrowth</groupId>
 	<artifactId>learnfront</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>learnfront Maven Webapp</name>
 	<url>http://maven.apache.org</url>

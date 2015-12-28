@@ -50,7 +50,7 @@ import java.util.Map;
  * @see org.springframework.orm.ibatis3.SqlSessionTemplate#setSqlSessionFactory
  * @see org.springframework.orm.ibatis3.SqlSessionTemplate#setDataSource
  */
-public class SqlSessionFactoryBean implements FactoryBean<SqlSessionFactory>, InitializingBean {
+public class SqlSessionFactoryBean implements FactoryBean, InitializingBean {
 
     private Resource[] configLocations;
 
