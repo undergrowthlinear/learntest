@@ -21,8 +21,8 @@
 
 	<!--spring component scan -->
 	<context:component-scan base-package="com.learnfront" />
-	<context:component-scan base-package="com.learnback" />
-	<context:component-scan base-package="com.restful" />
+	<context:component-scan base-package="com.learncommon" />
+	
 
     <bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

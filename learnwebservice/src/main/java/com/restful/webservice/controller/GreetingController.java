@@ -1,4 +1,4 @@
-package com.restful.webservice.controller;
+/*package com.restful.webservice.controller;
 
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.restful.webservice.entity.Greeting;
 
-/**
+*//**
  * 
  * @Description: TODO(restful web services)
  * @Author <a href="zhangwu@wxchina.com">Wu.Zhang</a>
  * @Date 2015年12月28日
  * @Version 1.0.0
- */
+ *//*
 @RestController
 public class GreetingController {
 
@@ -30,3 +30,4 @@ public class GreetingController {
 				name));
 	}
 }
+*/

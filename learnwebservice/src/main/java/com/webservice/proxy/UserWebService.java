@@ -12,9 +12,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
 import com.alibaba.fastjson.JSON;
-import com.learnback.service.UserService;
 import com.learncommon.User;
 import com.learncommon.XmlBeanUtils;
+import com.learncommon.service.UserService;
 
 @Service
 @WebService(serviceName = "userWebService")
