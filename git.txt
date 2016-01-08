@@ -31,6 +31,7 @@ git stash drop 工作区名   --删除保存的工作区
 git --help  --显示git的帮助信息												--查看帮助信息
 git rm  file  --删除文件从工作树和版本库的索引中   --eg: git rm aa 			--删除指定文件
 			  --删除版本库和工作区文件
+git rm -r 文件夹			  
 git rm --cached file  --将文件从版本库中删除			  
 git checkout -- file  --删除工作区的修改  --eg: git checkout -- remark.txt  --用版本库的文件替换工作区的文件
 
