@@ -1,4 +1,4 @@
-package com.learnback.work.alibaba;
+/*package com.learnback.work.alibaba;
 
 import java.net.InetSocketAddress;
 import java.util.List;
@@ -101,3 +101,4 @@ public class SimpleCanalClientExample {
 		}
 	}
 }
+*/
