@@ -175,11 +175,10 @@
 			<artifactId>org.apache.axis2.osgi</artifactId>
 			<version>1.6.2</version>
 		</dependency>
-		
-		<dependency>
+		<!-- <dependency>
 			<groupId>com.alibaba.otter</groupId>
 			<artifactId>canal.client</artifactId>
 			<version>1.0.21-SNAPSHOT</version>
-		</dependency>
+		</dependency> -->
 	</dependencies>
 </project>

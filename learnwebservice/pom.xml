@@ -19,10 +19,5 @@
   		<artifactId>learnsqlmapper</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
-  	<dependency>
-  		<groupId>com.undergrowth</groupId>
-  		<artifactId>learnback</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
   </dependencies>
 </project>

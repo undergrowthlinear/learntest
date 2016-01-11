@@ -1,4 +1,4 @@
-package com.learnback.work.entity;
+/*package com.learnback.work.entity;
 
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Value;
@@ -91,3 +91,4 @@ public class PostServer implements InitializingBean{
 	}
 
 }
+*/
