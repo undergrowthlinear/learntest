@@ -169,6 +169,7 @@
 		<module>learnmybatisgenerator</module>
 		<module>learnwork</module>
 		<module>learndblshared</module>
+		<module>learnbigdata</module>
 	</modules>
 	<build>
 		<plugins>
