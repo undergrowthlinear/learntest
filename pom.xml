@@ -159,6 +159,11 @@
 			<artifactId>shiro-spring</artifactId>
 			<version>1.2.4</version>
 		</dependency>
+		<dependency>
+			<groupId>openDMK</groupId>
+			<artifactId>jdmkrt</artifactId>
+			<version>1.0-b02</version>
+		</dependency>
 	</dependencies>
 	<modules>
 		<module>learnback</module>
