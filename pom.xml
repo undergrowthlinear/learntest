@@ -170,6 +170,7 @@
 		<module>learnwork</module>
 		<module>learndblshared</module>
 		<module>learnbigdata</module>
+		<module>learnmicroservices</module>
 	</modules>
 	<build>
 		<plugins>
