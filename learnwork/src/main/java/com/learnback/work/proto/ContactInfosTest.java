@@ -1,4 +1,4 @@
-package com.learnback.work.proto;
+/*package com.learnback.work.proto;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -22,8 +22,7 @@ public class ContactInfosTest {
 	public void testWrite() throws FileNotFoundException, IOException {
 		// TODO Auto-generated method stub
 		try (FileOutputStream outputStream = new FileOutputStream("contact.txt");) {
-			ContactInfos.Contact.Builder contact = ContactInfos.Contact
-					.newBuilder();
+			ContactInfos.Contact.Builder contact = ContactInfos.Contact.newBuilder();
 			addPersons(contact);
 			contact.build().writeTo(outputStream);
 			System.out.println(contact.build().toByteArray());
@@ -33,8 +32,7 @@ public class ContactInfosTest {
 
 	@Test
 	public void testRead() throws FileNotFoundException, IOException {
-		ContactInfos.Contact contact = ContactInfos.Contact
-				.parseFrom(new FileInputStream("contact.txt"));
+		ContactInfos.Contact contact = ContactInfos.Contact.parseFrom(new FileInputStream("contact.txt"));
 		disContact(contact);
 	}
 
@@ -53,8 +51,7 @@ public class ContactInfosTest {
 
 	private com.learnback.work.proto.ContactInfos.Contact.Person.Builder createPerson() {
 		// TODO Auto-generated method stub
-		ContactInfos.Contact.Person.Builder person = ContactInfos.Contact.Person
-				.newBuilder();
+		ContactInfos.Contact.Person.Builder person = ContactInfos.Contact.Person.newBuilder();
 		person.setId(new Random().nextInt(1000));
 		person.setName(RandomStringUtils.random(10, "a-z"));
 		PhoneNumber.Builder phone = createPhones(person);
@@ -74,3 +71,4 @@ public class ContactInfosTest {
 	}
 
 }
+*/

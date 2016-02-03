@@ -1,4 +1,4 @@
-/*package com.learnback.work;
+package com.learnback.work;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -24,14 +24,14 @@ import com.esms.common.entity.Ticket;
 import com.esms.common.entity.TicketInfo;
 import com.learnback.work.entity.PostServer;
 
-*//**
+/**
  * 支持SOCKET、HTTP、SOCKET4、SOCKET5
  * 
  * @Description: TODO(测试SDK)
  * @Author <a href="zhangwu@wxchina.com">Wu.Zhang</a>
  * @Date 2015年11月12日
  * @Version 1.0.0
- *//*
+ */
 public class SdkTest {
 
 	PostServer postServer = null;
@@ -62,11 +62,10 @@ public class SdkTest {
 		}
 	}
 
-	*//**
-	 * 创建MTPack
+	/**
 	 * 
 	 * @return
-	 *//*
+	 */
 	private static MTPack createMTPack() {
 		// TODO Auto-generated method stub
 		MTPack mtPack = new MTPack();
@@ -172,4 +171,3 @@ public class SdkTest {
 		}
 	}
 }
-*/

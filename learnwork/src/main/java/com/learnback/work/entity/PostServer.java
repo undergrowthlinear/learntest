@@ -1,4 +1,4 @@
-/*package com.learnback.work.entity;
+package com.learnback.work.entity;
 
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Value;
@@ -86,9 +86,19 @@ public class PostServer implements InitializingBean{
 	@Override
 	public void afterPropertiesSet() throws Exception {
 		// TODO Auto-generated method stub
+		isExist();
 		postMsg.getCmHost().setHost(mtHost, mtPort);
 		postMsg.getWsHost().setHost(moHost, moPort);
 	}
 
+	private void isExist() {
+		// TODO Auto-generated method stub
+		mtHost=mtHost==null?"172.16.22.243":mtHost;
+		moHost=moHost==null?"127.0.0.1":moHost;
+		mtPort=mtPort==0?8090:mtPort;
+		mtPort=mtPort==0?8088:mtPort;
+		username=username==null?"user01@ent01":username;
+		password=password==null?"123456":password;
+	}
+
 }
-*/

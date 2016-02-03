@@ -1,0 +1,48 @@
+2016-01-10 15:55:44,304 0     DEBUG [org.apache.shiro.io.ResourceUtils] (main:) Opening resource from class path [shiro.ini]
+2016-01-10 15:55:44,355 51    DEBUG [org.apache.shiro.config.Ini] (main:) Parsing [users]
+2016-01-10 15:55:44,357 53    DEBUG [org.apache.shiro.config.Ini] (main:) Parsing [roles]
+2016-01-10 15:55:44,358 54    DEBUG [org.apache.shiro.config.IniFactorySupport] (main:) Creating instance from Ini [sections=users,roles]
+2016-01-10 15:55:44,400 96    DEBUG [org.apache.shiro.realm.text.IniRealm] (main:) Discovered the [roles] section.  Processing...
+2016-01-10 15:55:44,403 99    DEBUG [org.apache.shiro.realm.text.IniRealm] (main:) Discovered the [users] section.  Processing...
+2016-01-10 15:55:44,436 132   DEBUG [org.apache.shiro.session.mgt.AbstractValidatingSessionManager] (main:) No sessionValidationScheduler set.  Attempting to create default instance.
+2016-01-10 15:55:44,438 134   INFO  [org.apache.shiro.session.mgt.AbstractValidatingSessionManager] (main:) Enabling session validation scheduler...
+2016-01-10 15:55:44,481 177   DEBUG [org.apache.shiro.session.mgt.DefaultSessionManager] (main:) Creating new EIS record for new session instance [org.apache.shiro.session.mgt.SimpleSession,id=null]
+2016-01-10 15:55:45,175 871   INFO  [com.learnback.work.shiro.QuikcStart] (main:) Retrieved the correct value! [aValue]
+2016-01-10 15:55:45,175 871   DEBUG [org.apache.shiro.realm.AuthenticatingRealm] (main:) Looked up AuthenticationInfo [lonestarr] from doGetAuthenticationInfo
+2016-01-10 15:55:45,176 872   DEBUG [org.apache.shiro.realm.AuthenticatingRealm] (main:) AuthenticationInfo caching is disabled for info [lonestarr].  Submitted token: [org.apache.shiro.authc.UsernamePasswordToken - lonestarr, rememberMe=true].
+2016-01-10 15:55:45,176 872   DEBUG [org.apache.shiro.authc.credential.SimpleCredentialsMatcher] (main:) Performing credentials equality check for tokenCredentials of type [[C and accountCredentials of type [java.lang.String]
+2016-01-10 15:55:45,176 872   DEBUG [org.apache.shiro.authc.credential.SimpleCredentialsMatcher] (main:) Both credentials arguments can be easily converted to byte arrays.  Performing array equals comparison
+2016-01-10 15:55:45,177 873   DEBUG [org.apache.shiro.authc.AbstractAuthenticator] (main:) Authentication successful for token [org.apache.shiro.authc.UsernamePasswordToken - lonestarr, rememberMe=true].  Returned account [lonestarr]
+2016-01-10 15:55:45,178 874   DEBUG [org.apache.shiro.subject.support.DefaultSubjectContext] (main:) No SecurityManager available in subject context map.  Falling back to SecurityUtils.getSecurityManager() lookup.
+2016-01-10 15:55:45,178 874   DEBUG [org.apache.shiro.mgt.DefaultSecurityManager] (main:) Context already contains a session.  Returning.
+2016-01-10 15:55:45,179 875   DEBUG [org.apache.shiro.subject.support.DefaultSubjectContext] (main:) No SecurityManager available in subject context map.  Falling back to SecurityUtils.getSecurityManager() lookup.
+2016-01-10 15:55:45,180 876   INFO  [com.learnback.work.shiro.QuikcStart] (main:) User [lonestarr] logged in successfully.
+2016-01-10 15:55:45,181 877   INFO  [com.learnback.work.shiro.QuikcStart] (main:) May the Schwartz be with you!
+2016-01-10 15:55:45,182 878   INFO  [com.learnback.work.shiro.QuikcStart] (main:) You may use a lightsaber ring.  Use it wisely.
+2016-01-10 15:55:45,182 878   INFO  [com.learnback.work.shiro.QuikcStart] (main:) You are permitted to 'drive' the winnebago with license plate (id) 'eagle5'.  Here are the keys - have fun!
+2016-01-10 15:55:45,182 878   DEBUG [org.apache.shiro.mgt.DefaultSecurityManager] (main:) Logging out subject with primary principal lonestarr
+2016-01-10 15:55:45,183 879   DEBUG [org.apache.shiro.session.mgt.AbstractSessionManager] (main:) Stopping session with id [96f96938-3991-4599-99be-912c7712b423]
+2016-01-10 16:08:40,239 0     DEBUG [org.apache.shiro.io.ResourceUtils] (main:) Opening resource from class path [shiro.ini]
+2016-01-10 16:08:40,279 40    DEBUG [org.apache.shiro.config.Ini] (main:) Parsing [users]
+2016-01-10 16:08:40,289 50    DEBUG [org.apache.shiro.config.Ini] (main:) Parsing [roles]
+2016-01-10 16:09:14,467 34228 DEBUG [org.apache.shiro.config.IniFactorySupport] (main:) Creating instance from Ini [sections=users,roles]
+2016-01-10 16:09:14,687 34448 DEBUG [org.apache.shiro.realm.text.IniRealm] (main:) Discovered the [roles] section.  Processing...
+2016-01-10 16:09:14,696 34457 DEBUG [org.apache.shiro.realm.text.IniRealm] (main:) Discovered the [users] section.  Processing...
+2016-01-10 16:10:24,691 104452 DEBUG [org.apache.shiro.session.mgt.AbstractValidatingSessionManager] (main:) No sessionValidationScheduler set.  Attempting to create default instance.
+2016-01-10 16:10:24,707 104468 INFO  [org.apache.shiro.session.mgt.AbstractValidatingSessionManager] (main:) Enabling session validation scheduler...
+2016-01-10 16:10:24,739 104500 DEBUG [org.apache.shiro.session.mgt.DefaultSessionManager] (main:) Creating new EIS record for new session instance [org.apache.shiro.session.mgt.SimpleSession,id=null]
+2016-01-10 16:11:00,304 140065 INFO  [com.learnback.work.shiro.QuikcStart] (main:) Retrieved the correct value! [aValue]
+2016-01-10 16:12:08,661 208422 DEBUG [org.apache.shiro.realm.AuthenticatingRealm] (main:) Looked up AuthenticationInfo [lonestarr] from doGetAuthenticationInfo
+2016-01-10 16:12:08,668 208429 DEBUG [org.apache.shiro.realm.AuthenticatingRealm] (main:) AuthenticationInfo caching is disabled for info [lonestarr].  Submitted token: [org.apache.shiro.authc.UsernamePasswordToken - lonestarr, rememberMe=true].
+2016-01-10 16:12:08,676 208437 DEBUG [org.apache.shiro.authc.credential.SimpleCredentialsMatcher] (main:) Performing credentials equality check for tokenCredentials of type [[C and accountCredentials of type [java.lang.String]
+2016-01-10 16:12:08,682 208443 DEBUG [org.apache.shiro.authc.credential.SimpleCredentialsMatcher] (main:) Both credentials arguments can be easily converted to byte arrays.  Performing array equals comparison
+2016-01-10 16:12:14,210 213971 DEBUG [org.apache.shiro.authc.AbstractAuthenticator] (main:) Authentication successful for token [org.apache.shiro.authc.UsernamePasswordToken - lonestarr, rememberMe=true].  Returned account [lonestarr]
+2016-01-10 16:12:16,022 215783 DEBUG [org.apache.shiro.subject.support.DefaultSubjectContext] (main:) No SecurityManager available in subject context map.  Falling back to SecurityUtils.getSecurityManager() lookup.
+2016-01-10 16:12:16,023 215784 DEBUG [org.apache.shiro.mgt.DefaultSecurityManager] (main:) Context already contains a session.  Returning.
+2016-01-10 16:12:16,023 215784 DEBUG [org.apache.shiro.subject.support.DefaultSubjectContext] (main:) No SecurityManager available in subject context map.  Falling back to SecurityUtils.getSecurityManager() lookup.
+2016-01-10 16:12:16,024 215785 INFO  [com.learnback.work.shiro.QuikcStart] (main:) User [lonestarr] logged in successfully.
+2016-01-10 16:12:16,024 215785 INFO  [com.learnback.work.shiro.QuikcStart] (main:) May the Schwartz be with you!
+2016-01-10 16:12:16,026 215787 INFO  [com.learnback.work.shiro.QuikcStart] (main:) You may use a lightsaber ring.  Use it wisely.
+2016-01-10 16:12:16,028 215789 INFO  [com.learnback.work.shiro.QuikcStart] (main:) You are permitted to 'drive' the winnebago with license plate (id) 'eagle5'.  Here are the keys - have fun!
+2016-01-10 16:12:16,029 215790 DEBUG [org.apache.shiro.mgt.DefaultSecurityManager] (main:) Logging out subject with primary principal lonestarr
+2016-01-10 16:12:16,030 215791 DEBUG [org.apache.shiro.session.mgt.AbstractSessionManager] (main:) Stopping session with id [e156b50a-3394-47d2-88e4-c5d9c14a47ba]
