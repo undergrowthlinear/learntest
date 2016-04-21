@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.UUID;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -34,11 +37,16 @@ import com.learnback.work.entity.PostServer;
  */
 public class SdkTest {
 
-	PostServer postServer = null;
-	Account account = null;
+	private static PostServer postServer = null;
+	private static  Account account = null;
+	private static  int pressure=10000;
 
-	@Before
-	public void before() {
+	public static void main(String[] args) throws Exception{
+		before();
+		MtSendSms();
+	}
+	
+	public static void before() {
 		// 获取bean
 		ApplicationContext context = new ClassPathXmlApplicationContext(
 				"classpath:spring-context.xml");
@@ -48,46 +56,77 @@ public class SdkTest {
 				postServer.getPassword());
 	}
 
-	@Test
-	public void MtSend() {
+	
+	public static void MtSendSms() throws Exception {
 		// TODO Auto-generated method stub
-		MTPack mtPack = createMTPack();
-		try {
-			GsmsResponse mtResponse = postServer.getPostMsg().post(account,
-					mtPack);
-			System.out.println(mtResponse);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+	    ExecutorService executor=Executors.newFixedThreadPool(pressure);
+	    for (int i = 0; i < pressure; i++) {
+			executor.execute(new SendMsgThread());
 		}
+	    if(!executor.isShutdown()){
+	    	executor.shutdown();
+	    }
 	}
 
+	
+	static class SendMsgThread implements Runnable{
+
+		@Override
+		public void run() {
+			// TODO Auto-generated method stub
+			try {
+				MTPack mtPack = createMTPack(MsgType.VOICE_CODE,SendType.GROUP,"a$1%!~@#");
+				GsmsResponse mtResponse = postServer.getPostMsg().post(account,
+						mtPack);
+				System.out.println(mtResponse);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+	}
+	
+	
 	/**
 	 * 
 	 * @return
+	 * @throws Exception 
 	 */
-	private static MTPack createMTPack() {
+	private  static MTPack createMTPack(MsgType msgType,SendType sendType,String content) throws Exception {
 		// TODO Auto-generated method stub
 		MTPack mtPack = new MTPack();
 		mtPack.setBatchID(UUID.randomUUID());
-		mtPack.setBatchName("测试SDK发送" + System.currentTimeMillis());
-		mtPack.setMsgType(MsgType.SMS);
-		// 默认业务
-		mtPack.setBizType(2);
+		mtPack.setBatchName("msgType:"+msgType+",测试SDK发送" + System.currentTimeMillis());
+		mtPack.setMsgType(msgType);
+		// 语音业务
+		mtPack.setBizType(22);
 		mtPack.setDistinctFlag(true);
-		mtPack.setSendType(SendType.MASS);
-		List<MessageData> msgs = createMessageDatas(100);
+		mtPack.setSendType(sendType);
+		List<MessageData> msgs=null;
+		msgs = createMessageDatas(3,content);
+		if(msgs==null) throw new Exception("消息内容不能为空");
 		mtPack.setMsgs(msgs);
 		return mtPack;
 	}
 
-	private static List<MessageData> createMessageDatas(int num) {
+	private static List<MessageData> createMessageDatas(int num,String content) {
 		// TODO Auto-generated method stub
 		List<MessageData> msgs = new ArrayList<MessageData>();
 		for (int i = 0; i < num; i++) {
 			msgs.add(new MessageData("18287131" + String.format("%03d", i),
-					"测试短信内容" + i));
+					content));
+			msgs.add(new MessageData("18087131" + String.format("%03d", i),
+					content));
+			msgs.add(new MessageData("18587131" + String.format("%03d", i),
+					content));
 		}
+		/*msgs.add(new MessageData("18287131061","a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582"));
+		msgs.add(new MessageData("18520045892","a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582"));
+		msgs.add(new MessageData("18047582654","a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582"));*/
+		/*msgs.add(new MessageData("18287131061",content));
+		msgs.add(new MessageData("18520045892",content));
+		msgs.add(new MessageData("18047582654",content));*/
 		return msgs;
 	}
 

@@ -52,6 +52,8 @@ public class XLightWebTest {
 		return uri;
 	}
 
+	
+	
 	@Test
 	public void sendSms() {
 		HttpClient client = new HttpClient();

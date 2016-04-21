@@ -27,6 +27,12 @@ public class DateTest {
 	    calendar.setTimeInMillis(System.currentTimeMillis());
 	    Date date3=calendar.getTime();
 	    System.out.println(format.format(date3));;
+	    
+	    StringBuilder builder=new StringBuilder("0415194725");
+	    builder.replace(0, builder.length(), builder.substring(0, builder.length()-2));
+		String year=String.valueOf(calendar.get(Calendar.YEAR));
+	    builder.insert(0, year.substring(2));
+		System.out.println(builder.toString());
 	}
 
 }

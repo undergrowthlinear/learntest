@@ -55,7 +55,7 @@ public class HttpOriginalTest {
 		StringBuilder builder = new StringBuilder();
 		String protocal = "http://";
 		String path = "cgi-bin/sendsms?";
-		String userName = "user01@ent01";
+		String userName = "admin@ent01";
 		String password = "123456";
 		String to = "18287131062";
 		String msgtype = "1";
