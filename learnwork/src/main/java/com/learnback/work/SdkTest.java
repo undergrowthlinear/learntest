@@ -39,7 +39,7 @@ public class SdkTest {
 
 	private static PostServer postServer = null;
 	private static  Account account = null;
-	private static  int pressure=10000;
+	private static  int pressure=2;
 
 	public static void main(String[] args) throws Exception{
 		before();
@@ -75,7 +75,7 @@ public class SdkTest {
 		public void run() {
 			// TODO Auto-generated method stub
 			try {
-				MTPack mtPack = createMTPack(MsgType.VOICE_CODE,SendType.GROUP,"a$1%!~@#");
+				MTPack mtPack = createMTPack(MsgType.SMS,SendType.MASS,"a$1%!~@#");
 				GsmsResponse mtResponse = postServer.getPostMsg().post(account,
 						mtPack);
 				System.out.println(mtResponse);

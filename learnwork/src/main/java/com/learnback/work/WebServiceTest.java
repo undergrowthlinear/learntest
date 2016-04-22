@@ -20,7 +20,7 @@ public class WebServiceTest {
 		try {
 			WebServiceStub stub = new WebServiceStub();
 			PostSingle postSingle = new PostSingle();
-			postSingle.setAccount("user01@ent01");
+			postSingle.setAccount("admin@ent03");
 			postSingle.setPassword("123456");
 			postSingle.setMobile("18287131062");
 			postSingle.setContent("axis web client 测试");
