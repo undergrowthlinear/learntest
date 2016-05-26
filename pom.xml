@@ -174,7 +174,7 @@
 		</dependency>
 	</dependencies>
 	<modules>
-		<module>learnback</module>
+		<!--  <module>learnback</module> -->
 		<module>learnfront</module>
 		<module>learnsqlmapper</module>
 		<module>learncommon</module>
@@ -182,9 +182,9 @@
 		<module>learnmybatisgenerator</module>
 		<module>learnwork</module>
 		<module>learndblshared</module>
-		<module>learnbigdata</module>
-		<module>learnmicroservices</module>
-		<module>learnspring</module>
+		<!-- <module>learnbigdata</module> -->
+		<!--<module>learnmicroservices</module>-->
+		<!--<<module>learnspring</module>-->
 	</modules>
 	<build>
 		<plugins>

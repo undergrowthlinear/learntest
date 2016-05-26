@@ -25,12 +25,14 @@ public class PostServer implements InitializingBean{
 
 	public PostServer() {
 		postMsg = new PostMsg();
+		System.out.println("hello");
 	}
 
+	
 	public String getMtHost() {
 		return mtHost;
 	}
-
+	
 	public void setMtHost(String mtHost) {
 		this.mtHost = mtHost;
 	}

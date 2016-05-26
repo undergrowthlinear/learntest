@@ -130,8 +130,8 @@ public class HttpOriginalTest {
 		String userName = "admin@ent03";
 		String password = "123456";
 		String to = "18287131062";
-		String msgtype = "9";
-		int bizType = 22;
+		String msgtype = "1";
+		int bizType = 0;
 		URI uri = null;
 		try {
 			String text = URLEncoder.encode("qwer3", "GBK");

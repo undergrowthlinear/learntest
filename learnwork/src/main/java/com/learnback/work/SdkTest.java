@@ -39,12 +39,13 @@ public class SdkTest {
 
 	private static PostServer postServer = null;
 	private static  Account account = null;
-	private static  int pressure=2;
+	private static  int pressure=1;
 
 	public static void main(String[] args) throws Exception{
 		before();
 		MtSendSms();
 	}
+	
 	
 	public static void before() {
 		// 获取bean
@@ -75,7 +76,7 @@ public class SdkTest {
 		public void run() {
 			// TODO Auto-generated method stub
 			try {
-				MTPack mtPack = createMTPack(MsgType.SMS,SendType.MASS,"a$1%!~@#");
+				MTPack mtPack = createMTPack(MsgType.VOICE_CODE,SendType.MASS,"rt22");
 				GsmsResponse mtResponse = postServer.getPostMsg().post(account,
 						mtPack);
 				System.out.println(mtResponse);
@@ -104,7 +105,7 @@ public class SdkTest {
 		mtPack.setDistinctFlag(true);
 		mtPack.setSendType(sendType);
 		List<MessageData> msgs=null;
-		msgs = createMessageDatas(3,content);
+		msgs = createMessageDatas(10000,content);
 		if(msgs==null) throw new Exception("消息内容不能为空");
 		mtPack.setMsgs(msgs);
 		return mtPack;
@@ -114,19 +115,19 @@ public class SdkTest {
 		// TODO Auto-generated method stub
 		List<MessageData> msgs = new ArrayList<MessageData>();
 		for (int i = 0; i < num; i++) {
-			msgs.add(new MessageData("18287131" + String.format("%03d", i),
+			msgs.add(new MessageData("18287" + String.format("%06d", i),
 					content));
-			msgs.add(new MessageData("18087131" + String.format("%03d", i),
+			/*msgs.add(new MessageData("18087131" + String.format("%03d", i),
 					content));
 			msgs.add(new MessageData("18587131" + String.format("%03d", i),
-					content));
+					content));*/
 		}
 		/*msgs.add(new MessageData("18287131061","a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582"));
 		msgs.add(new MessageData("18520045892","a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582"));
 		msgs.add(new MessageData("18047582654","a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582a$1%!~@#5582"));*/
 		/*msgs.add(new MessageData("18287131061",content));
-		msgs.add(new MessageData("18520045892",content));
-		msgs.add(new MessageData("18047582654",content));*/
+		msgs.add(new MessageData("18520045892",content));*/
+		//msgs.add(new MessageData("18287131061",content));
 		return msgs;
 	}
 
