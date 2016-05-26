@@ -9,7 +9,7 @@ import javax.management.remote.JMXConnectorServer;
 import javax.management.remote.JMXConnectorServerFactory;
 import javax.management.remote.JMXServiceURL;
 
-import com.sun.jdmk.comm.HtmlAdaptorServer;
+/*import com.sun.jdmk.comm.HtmlAdaptorServer;*/
 
 public class MessageEngineAgent {
 	public void start() {
